@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Blood Bank</title>
+
+                            
+  </head>
+  <body>
+    <h1>Request Blood</h1>
+ <form action="bld_request_action.php" method="POST" class="">
+<div class="form-row">
+    <div class="col-3">
+     <label >Patient Name</label>
+      <input type="text" name = "patient_name" class="form-control" required>
+    </div>
+    <div class="col-3">
+      <label >Contact No.</label>
+      <input type="text" name = "contact_no" class="form-control" required>
+    </div>
+    <div class="col-3">
+    <label >Email</label>
+      <input type="text" name = "email" class="form-control" placeholder="email" required>
+    </div>
+  </div>
+
+<div class="form-row">
+    <div class="col-3">
+     <label >Blood Group</label>
+      <input type="text" name = "blood_grp" class="form-control" required >
+    </div>
+    <div class="col-3">
+      <label >City</label>
+      <input type="text" name = "city" class="form-control" required >
+    </div>
+    
+  </div>
+
+<div class="form-row">
+    <div class="col-3">
+     <label >Required Date</label>
+      <input type="text" name = "req_date" class="form-control" placeholder="DD/MM/YYYY" required >
+    </div>
+    <div class="col-3">
+      <label >Doctor Name</label>
+      <input type="text" name = "doc_name" class="form-control" required >
+    </div>
+    
+  </div>
+<br>
+
+<label >Hospital Details</label>
+<br>
+<textarea rows="4" cols="80" name="comment" form="usrform" name = "hospital_details" placeholder="Enter here..." required>
+</textarea>
+<br>
+<label >Comment</label>
+<br>
+<textarea rows="4" cols="80" name="comment" form="usrform" name = "comment" placeholder="Enter here..." required>
+</textarea>
+
+<br>
+<button type="submit" class="btn">Request</button>
+
+
+
+
+
+</form>
+
+</body>
+</html>
